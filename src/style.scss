@@ -1,0 +1,298 @@
+body, html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #dfdfdf;
+    background-image: url("https://live.staticflickr.com/65535/50957662582_6e1dfeff89_k.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    div {
+        width: 32%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bar {
+        max-height: 2px;
+        opacity: 0.9;
+    }
+
+    .navLeft {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .resume {
+            padding-left: 40px;
+        }
+
+        .slash {
+            padding-right: 23px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .resume {
+            margin-left: 30px;
+        }
+
+        .climbing {
+            margin-right: 30px;
+        }
+    }
+
+    .navCenter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            color: #dfdfdf;
+
+        }
+
+        a:hover {
+            img {
+                opacity: 1;
+            } 
+            p {
+                color: white;
+            }
+        }
+
+        img {
+            max-width: 270px;
+            opacity: 0.85;
+        }
+
+        p {
+            margin: 0px;;
+            padding: 0px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 1.9rem;
+        }
+    }
+
+    .navRight {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a:hover {
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        padding-right: 30px;
+
+    }
+}
+
+.about {
+    margin-top: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
+    background: rgba(0, 0, 0, 0.7);
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    a {
+        color: #db1c3d;
+    }
+
+    a:hover {
+        color: red;
+    }
+
+    .mainText {
+        padding: 60px;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+
+    .topText {
+        margin-top: 0px;
+    }
+
+    .bottomText {
+        margin-bottom: 0px;
+    }
+}
+
+.full {
+    height: 100%;
+    img {
+        max-height: 35px;
+        margin: 10px;
+    }
+}
+
+.bottom {
+    bottom: 0%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+
+    a {
+        color: #a09e9d;
+    }
+
+    a:hover {
+        color: #c7c5c4;
+    }
+
+    p {
+        color: #a09e9d;
+        margin-right: 30px;
+        font-size: 0.9rem;
+    }
+
+    img {
+        opacity: 0.8;
+        margin-left: 10px;
+    }
+
+    img:hover {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.comingSoon {
+    margin-top: 150px;
+    width: 28%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile version styling */
+
+@media only screen and (max-width: 1200px) {
+    
+    /* New nav styles */
+
+    nav {
+        height: 120px;
+
+        div {
+            width: 100%;
+        }
+    }
+
+    .navCenter {
+        padding-top: 40px;
+        
+        a img {
+            width: 70%;
+            height: auto;
+        }
+
+        a p {
+            font-size: 6vw;
+        }
+    }
+
+
+    .navLeft {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    .navRight {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    /* New about styles */
+    .full {
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-height: 30px;
+        }
+    }
+    
+    .about {
+        margin: 0;
+        padding: 0;
+        width: 85%;
+        margin-top: 50px;
+        background: rgba(0, 0, 0, 0.8);
+
+    }
+
+    .about .mainText {
+        margin: 0;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 30px;
+
+        p {
+            font-size: 5vw;
+        }
+    }
+
+    .bottom {
+        width: 100%;
+    }
+    
+    .bottom p {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+
+    body, html {
+        background-image: url("https://live.staticflickr.com/65535/50957662582_6e1dfeff89_k.jpg");
+        background-size: cover;
+        overflow-x: hidden;
+    }
+
+}
